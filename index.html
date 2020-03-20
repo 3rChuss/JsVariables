@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <center><h1>JavaScript</h1><h1>Diferencias entre declaraciones de variables</h1></center>
+
+     <script>
+          /* Declarando variables con var */
+          var myVar;
+          var myVar = 'hola mundo';
+          console.log(myVar);
+          // Resultado:
+          // hola mundo
+
+          /* Declarando variables con let */
+          let nombre = 'Jesus';
+          let apellido = 'Abril';
+          //let nombre = 'Juan';
+          console.log(nombre + ' ' + apellido);
+          // Aquí se producirá el siguiente error, el cual te dice que la variable nombre ya fue declarada.
+          // Uncaught SyntaxError: Identifier 'nombre' has already been declared
+
+          //tambien puedes declarar múltiples de la siguiente forma
+          let  myNombre   = 'Jesus',  // como puedes observar se usa una coma.
+               myApellido = 'Abril';
+          console.log(myNombre + ' ' + myApellido);
+          // Resultado
+          // Jesus Abril
+
+          let otroNombre;
+          //console.log(otronombre);
+          //Resultado
+          //Uncaught ReferenceError: otronombre is not defined
+          otroNombre = 'Juan Ramirez';
+          console.log(otroNombre);
+          // Resultado
+          // Juan Ramirez
+
+          /* Declarando variables con const */
+          //const producto;
+          //console.log(producto);
+          // Resultado
+          // Uncaught SyntaxError: Missing initializer in const declaration
+
+          const otroProducto = 'Jabón';
+          console.log(otroProducto);
+          // Resultado
+          // Jabón
+
+
+     </script>
+</body>
+</html>
